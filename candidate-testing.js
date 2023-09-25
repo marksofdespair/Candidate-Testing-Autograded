@@ -1,6 +1,4 @@
 const input = require('readline-sync');
-let correctResponses = 0;
-let incorrectResponses = 0;
 
 // TODO 2: modify your quiz app to ask 5 questions //
 
@@ -37,7 +35,7 @@ function gradeQuiz(candidateAnswers) {
 
   for (i = 0; i < questions.length; i++){
     console.log(questions[i]);
-    
+
     if (candidateAnswers[i].toLowerCase() != correctAnswers[i].toLowerCase()){
       console.log("Incorrect. The correct answer is: " + correctAnswers[i] + ".");
     }else{
@@ -59,7 +57,6 @@ function runProgram() {
   console.log(grade)
 }
 
-runProgram();
 // ----------- Don't write any code or change any code below this line ---------- //
 module.exports = {
   candidateName: candidateName,
