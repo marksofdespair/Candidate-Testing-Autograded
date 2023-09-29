@@ -45,6 +45,12 @@ function gradeQuiz(candidateAnswers) {
   }
     //TODO 3.2 use this variable to calculate the candidates score.
 
+    if (grade >= 80){
+      console.log(`Congratulations! You passed the initial testing with a grade of ${grade}!`);
+    }else{
+      console.log(`Unfortunately, you need an 80% or higher to pass this test. You scored ${grade}.`)
+    }
+
   return grade;
 }
 
@@ -57,6 +63,7 @@ function runProgram() {
   console.log(grade)
 }
 
+runProgram();
 // ----------- Don't write any code or change any code below this line ---------- //
 module.exports = {
   candidateName: candidateName,
